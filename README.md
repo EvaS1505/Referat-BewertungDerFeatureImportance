@@ -1,11 +1,11 @@
 # Referat: Bewertung der Feature Importance
 
-Dieses Repository dokumentiert und implementiert verschiedene Machine-Learning-Ansätze zur Analyse der Feature Importance im Datensatz "AI4I 2020 Predictive Maintenance". Ziel des Projekts ist es, zu untersuchen, welche Merkmale am stärksten zur Vorhersage von Maschinenausfällen beitragen.
+Dieses Repository dokumentiert und implementiert verschiedene Machine-Learning-Ansätze zur Analyse der Feature Importance im Datensatz "AI4I 2020 Predictive Maintenance". Ziel des Projekts ist es, zu untersuchen, welche Merkmale am stärksten zur Vorhersage von Maschinenausfällen beitragen, sowie die Eignung der verschiedenen Modelle für den Anwendungsfall zu untersuchen.
 
 ## Inhalt des Projekts
 
 - `AI_maschine.ipynb`  
-  Notebook mit einem neuronalen Netz (MLP) für die Klassifikation von Maschinenausfällen.
+  Neuronales Netz (MLP) für die Klassifikation von Maschinenausfällen.
 
 - `CART_Modell.ipynb`  
   Entscheidungsbaum (CART) mit Hyperparameteroptimierung und Feature-Importance-Analyse.
@@ -53,7 +53,7 @@ Der Datensatz ist im Projekt als `ai4i2020.csv` enthalten.
 Ein Entscheidungsbaum dient als leicht interpretierbares Modell. Es ermöglicht eine verständliche Analyse der wichtigsten Merkmale anhand von Splits im Baum.
 
 - Hyperparameteroptimierung mit `GridSearchCV`
-- Bewertung mittels Accuracy, Precision, Recall, F1-Score und ROC-AUC
+- Bewertung mittels Accuracy, Precision, Recall und F1-Score
 - Feature Importance mit:
   - Mean Decrease in Impurity (MDI)
   - Permutation Importance
@@ -99,37 +99,8 @@ Referat-BewertungDerFeatureImportance/
 └── .gitignore
 ```
 
-## Voraussetzungen
 
-Für die Ausführung der Notebooks werden folgende Pakete benötigt:
-
-- Python 3.x
-- Jupyter Notebook oder Google Colab
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
-- tensorflow (für das neuronale Netz)
-- shap
-
-Beispielinstallation:
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn tensorflow shap
-```
-
-## So verwendest du das Projekt
-
-1. Repository klonen oder herunterladen.
-2. `ai4i2020.csv` im gleichen Ordner wie die Notebooks ablegen.
-3. Jupyter Notebook oder Google Colab öffnen.
-4. Das gewünschte Notebook ausführen.
-5. Ergebnisse für Modellbewertung und Feature Importance analysieren.
-
-## Beispielhafte Ergebnisse
-
-Die in den Notebooks durchgeführten Experimente zeigen, dass die Modelle in der Lage sind, Ausfälle mit hoher Genauigkeit zu erkennen. Besonders relevante Features sind typischerweise:
+Die  durchgeführten Experimente zeigen, dass die Modelle in der Lage sind, Ausfälle mit hoher Genauigkeit zu erkennen. Besonders relevante Features sind typischerweise:
 
 - Drehmoment
 - Drehzahl
@@ -142,10 +113,6 @@ Je nach Modell variieren die exakten Werte leicht, aber die generellen Muster ze
 
 Dieses Projekt veranschaulicht, wie Machine Learning und Explainable AI eingesetzt werden können, um maschinelle Ausfälle zu erkennen und die zugrundeliegenden Einflussfaktoren zu verstehen. Die Kombination aus Modellleistung und Feature-Importance-Analyse ist besonders hilfreich für industrielle Anwendungen im Bereich Predictive Maintenance.
 
-## Autor
 
 Dieses Projekt wurde im Rahmen eines Referats zur Bewertung der Feature Importance entwickelt.
 
-## Lizenz
-
-Dieses Repository ist aktuell ohne explizite Lizenzangabe. Bitte bei öffentlicher Nutzung oder Weitergabe die Rechte und Einwilligungen prüfen.
