@@ -89,7 +89,6 @@ Diese Techniken helfen dabei, die Einflussfaktoren auf Maschinenfehler zu identi
 Referat-BewertungDerFeatureImportance/
 ├── AI_maschine.ipynb
 ├── CART_Modell.ipynb
-├── RandomForest.ipynb
 ├── RandomForestModell.ipynb
 ├── ai4i2020.csv
 ├── README.md
