@@ -10,9 +10,6 @@ Dieses Repository dokumentiert und implementiert verschiedene Machine-Learning-A
 - `CART_Modell.ipynb`  
   Entscheidungsbaum (CART) mit Hyperparameteroptimierung und Feature-Importance-Analyse.
 
-- `RandomForest.ipynb`  
-  Erweiterte Analyse mit Random Forest, inklusive Feature-Importance und Modellbewertung.
-
 - `RandomForestModell.ipynb`  
   Random-Forest-Modell mit verschiedenen Methoden zur Ermittlung der Wichtigkeit von Features (MDI, Permutation Importance, SHAP).
 
